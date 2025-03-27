@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,16 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
+}
+
+.content {
+  flex: 1; /* Fill all space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 input {
@@ -24,3 +36,100 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+
+}
+
+.footer {
+  background-color: #eee;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+
+/* My solution
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+  padding-right: 30px;
+}
+
+.left-links, 
+.right-links {
+  display: flex;
+  gap: 20px;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 600px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #eee;
+  padding-right: 30px;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 8px 5px;
+  margin-top: 20px;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #9e9d9d;
+}
+*/
